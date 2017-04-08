@@ -296,7 +296,7 @@ run 'rm -rf test'
 
 # Checker
 # ----------------------------------------------------------------
-get 'https://raw.github.com/morizyun/rails5_application_template/master/root/.rubocop.yml', '.rubocop.yml'
+get 'https://github.com/tackeyy/rails_template/blob/master/.rubocop.yml', '.rubocop.yml'
 get 'https://raw.github.com/morizyun/rails5_application_template/master/root/.overcommit.yml', '.overcommit.yml'
 get 'https://raw.github.com/morizyun/rails5_application_template/master/root/.haml-lint.yml', '.haml-lint.yml'
 

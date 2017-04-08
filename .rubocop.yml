@@ -1,0 +1,46 @@
+AllCops:
+  Exclude:
+    - vendor/**/*
+    - db/**/*
+    - lib/**/*
+    - bin/**/*
+    - spec/**/*
+    - Capfile
+    - Rakefile
+    - config.ru
+    - bin/setup
+    - config/**/*
+    - bin/**/*
+    - config/boot.rb
+    - db/schema.rb
+    - script/**/*
+    - tmp/**/*
+    - vendor/**/*
+    - Rakefile
+    - Gemfile
+    - config/unicorn/*
+  DisplayCopNames: true
+
+Rails:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 30
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
