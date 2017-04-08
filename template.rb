@@ -30,6 +30,7 @@ gem 'responders'
 gem 'bootstrap-sass'
 gem 'bootswatch-rails'
 gem 'font-awesome-rails'
+gem 'active_decorator'
 
 # Fast Haml
 gem 'faml'
@@ -39,7 +40,6 @@ gem 'simple_form'
 
 # Pagenation
 gem 'kaminari'
-
 
 # ============================
 # Authentication
@@ -51,7 +51,6 @@ gem 'sorcery'
 # ============================
 # Configuration using ENV
 gem 'dotenv-rails'
-gem 'enum_help'
 
 # ============================
 # Database
@@ -331,6 +330,12 @@ if yes?('Do you use Guard? [yes or ELSE]')
     run 'bundle install --path vendor/bundle --jobs=4 --without production'
     run 'bundle exec guard init rspec rubocop livereload'
   end
+end
+
+# Responders
+# ----------------------------------------------------------------
+Bundler.with_clean_env do
+  run 'bundle exec rails g responders:install'
 end
 
 # Rubocop Auto correct
