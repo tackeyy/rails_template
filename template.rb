@@ -210,7 +210,7 @@ end
 
 # Bootstrap/Bootswach/Font-Awesome
 run 'rm -rf app/assets/stylesheets/application.css'
-get 'https://raw.github.com/morizyun/rails5_application_template/master/app/assets/stylesheets/application.css.scss', 'app/assets/stylesheets/application.css.scss'
+get 'https://raw.github.com/tackeyy/rails_template/master/app/assets/stylesheets/application.scss', 'app/assets/stylesheets/application.scss'
 
 # Initialize SimpleForm
 Bundler.with_clean_env do
